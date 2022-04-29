@@ -1,0 +1,119 @@
+version: "2.0"
+
+intents: 
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - about
+  - find_local
+  - support
+  - volunteering
+  - Lewisham_local_card
+  - Food&Drinks
+  - Retail
+  - Entertainment
+  - Hair&Beauty
+  - Exercise&Leisure
+  - Services
+  - Community
+  - Professional
+  - Online&Others
+
+responses:
+  utter_greet:
+  - text: "Hello, it's a pleasure to have you here. How are you?"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.dreamstime.com%2Fphotos-images%2Ffunny-smile.html&psig=AOvVaw0yvlHvOvO5HzsHConeGCnP&ust=1651033552000000&source=images&cd=vfe&ved=0CAwQjRxqFwoTCPi8yLfxsPcCFQAAAAAdAAAAABAD"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Lewybot."
+
+  utter_greet_about:
+  - text: "Hey! Would you like to know about us?"  
+
+  utter_who_we_are:
+  - text: "Lewisham Local is the name of the charity that has existed for over 20 years serving local communities in Lewisham. The charity is also known by the name of Rushey Green Time Bank."
+
+  utter_greet_about_what_we_do:
+  - text: "Strengthen Lewishams voluntary & community sector. Connect individuals, organisations and businesses to the community and increase awareness of the good causes and needs in the community. Encourage all to give and share time, skills, expertise, knowledge, resources and money to help make Lewisham a better place. Promote an asset-based model that makes the most of what we already have in Lewisham"
+
+  utter_greet_what_we_do:
+  - text: "Hey! Would you like to know more about what we do?"  
+
+
+  utter_team:
+  - text: "Would you like to know more about our team?"
+
+  utter_greet_team:
+  - text: "You can visit this link to be introduced with our team : https://www.lewishamlocal.com/lewisham-local-team/ "
+
+  utter_impact:
+  - text: "Would you like to know more about our impact?"
+
+  utter_greet_impact:
+  - text: "We work across local sectors to create opportunities to generate local giving of time, skills, support and money. Learn more about our impact by visiting this link : https://www.lewishamlocal.com/our-impact/"
+
+  utter_projects:
+  - text: "Would you like to know more about our projects?"
+
+  utter_greet_projects:
+  - text: "The following links contains our latest projects: https://www.lewishamlocal.com/our-projects/"
+
+  utter_greet_about_l_card:
+  - text: "Hey! Would you like to know more about the Lewisham Local Card ?" 
+
+  utter_info_about_card:
+  - text: "The Lewisham Local Card supports good causes in our borough and rewards you for shopping locally. Join 3000+ cardholders and gain access to hundreds of discounts and offers across Lewisham’s vibrant independent businesses. You can get a card by for £10, which goes towards supporting local good causes,  or volunteer within our tremendous borough to get a card absolutely free. Help out local community and show your support for small business by using your spending power for good, enriching our community in Lewisham."
+
+  utter_offer_categories:
+  - text: "Lewisham Local offers are provided in the following categories: Food&Drinks, Retail, Entertainment, Hair&Beauty, Exercise&Leisure, Services, Community, Professional, Online&Other. Would you like to browse any of this categories?"
+
+  utter_category_selection:
+  - text: "Which one would you like to select?"
+
+  utter_food_info:
+  - text: "You can visit this link for more info: https://www.lewishamlocal.com/card/map/food-drinks/"
+
+  utter_retail_info:
+  - text: "You can visit this link for more info: https://www.lewishamlocal.com/card/map/retail/"
+
+  utter_entertainment_info:
+  - text: "You can visit this link for more info: https://www.lewishamlocal.com/places/category/entertainment/united-kingdom/greater-london/london/"
+
+  utter_hair&beauty_info:
+  - text: "You can visit this link for more info: https://www.lewishamlocal.com/card/map/hair-beauty/"
+
+  utter_exercise&leisure_info:
+  - text: "You can visit this link for more info: https://www.lewishamlocal.com/card/map/exercise-leisure/"
+
+  utter_community_info:
+  - text: "You can visit this link for more info: https://www.lewishamlocal.com/community-groups-directory/"
+
+  utter_professional_info:
+  - text: "You can visit this link for more info: https://www.lewishamlocal.com/card/map/professional/"
+
+  utter_online&others_info:
+  - text: "You can visit this link for more info: https://www.lewishamlocal.com/places/category/online-other-offers/united-kingdom/greater-london/london/"
+
+  utter_services_info:
+  - text: "You can visit this link for more info: https://www.lewishamlocal.com/card/map/services/"
+
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

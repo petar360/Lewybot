@@ -1,0 +1,210 @@
+version: "2.0"
+
+stories:
+
+- story: happy path 
+  steps:
+  - intent: greet 
+  - action: utter_greet 
+  - intent: mood_great 
+  - action: utter_happy 
+
+- story: sad path 1  
+  steps:
+  - intent: greet 
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+
+# STORY LINE FOR LEWISHAM LOCAL INFO 
+# This story line gives an insight in regards to the fundamental information of Lewisham Local
+- story: about  lewisham local (positive)
+  steps:
+  - intent: about
+  - action: utter_greet_about
+  - intent: affirm
+  - action: utter_who_we_are
+  - action: utter_greet_what_we_do
+  - intent: affirm
+  - action: utter_greet_about_what_we_do
+  - action: utter_team
+  - intent: affirm
+  - action: utter_greet_team
+  - action: utter_impact
+  - intent: affirm
+  - action: utter_greet_impact
+  - action: utter_projects
+  - intent: affirm
+  - action: utter_greet_projects
+  - action: utter_did_that_help
+  
+
+# Story Line for the Lewisham Local Info, when the user refuses to continue the conversation
+
+- story: about  lewisham local (negative)
+  steps:
+  - intent: about
+  - action: utter_greet_about
+  - intent: deny
+  - action: utter_goodbye
+
+# Second version | story Line for the Lewisham Local Info, when the user refuses to continue the conversation
+
+- story: about  lewisham local 1 (negative)
+  steps:
+  - intent: about
+  - action: utter_greet_about
+  - intent: affirm
+  - action: utter_who_we_are
+  - action: utter_greet_what_we_do
+  - intent: deny
+  - action: utter_goodbye
+
+# Third version | story Line for the Lewisham Local Info, when the user refuses to continue the conversation
+
+- story: about  lewisham local 2 (negative)
+  steps:
+  - intent: about
+  - action: utter_greet_about
+  - intent: affirm
+  - action: utter_who_we_are
+  - action: utter_greet_what_we_do
+  - intent: affirm
+  - action: utter_greet_about_what_we_do
+  - action: utter_team
+  - intent: deny
+  - action: utter_goodbye
+
+- story: about  lewisham local (positive)2
+  steps:
+  - intent: about
+  - action: utter_greet_about
+  - intent: affirm
+  - action: utter_who_we_are
+  - action: utter_greet_what_we_do
+  - intent: affirm
+  - action: utter_greet_about_what_we_do
+  - action: utter_team
+  - intent: affirm
+  - action: utter_greet_team
+  - action: utter_impact
+  - intent: deny
+  - action: utter_goodbye
+
+# STORY LINE FOR LEWISHAM LOCAL Card discount 
+# this story line insists  on giving info for the Lewisham card and different categories
+
+- story: Lewisham local card discounts (positive)
+  steps:
+  - intent: Lewisham_local_card
+  - action: utter_greet_about_l_card
+  - intent: affirm
+  - action: utter_info_about_card
+  - action: utter_offer_categories
+  - intent: affirm
+  - action: utter_category_selection
+
+
+# STORY LINE FOR LEWISHAM LOCAL Food and Drink Info 
+# this story line provides links to the user for the current food and drinks businesses in Lewisham
+
+- story: Food and drinks info
+  steps:
+  - intent: Food&Drinks
+  - action: utter_food_info
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_goodbye
+
+# STORY LINE FOR LEWISHAM LOCAL retail info 
+# this story line provides links to the user for the current retail info
+
+- story: Retail info
+  steps:
+  - intent: Retail
+  - action: utter_retail_info
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_goodbye
+
+# STORY LINE FOR LEWISHAM LOCAL entertainment info 
+# this story line provides links to the user for the current entertainment
+
+- story: Entertainment info
+  steps:
+  - intent: Entertainment
+  - action: utter_entertainment_info
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_goodbye
+
+# STORY LINE FOR LEWISHAM LOCAL Hair&Beauty info 
+# this story line provides links to the user for the current Hair&Beauty shops in Lewisham
+
+- story: Hair&Beauty info
+  steps:
+  - intent: Hair&Beauty
+  - action: utter_hair&beauty_info
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_goodbye
+
+# STORY LINE FOR LEWISHAM LOCAL Exercise&Leisure info 
+# this story line provides links to the user for the current leisure centres in Lewisham
+
+- story: Exercise&Leisure info
+  steps:
+  - intent: Exercise&Leisure
+  - action: utter_exercise&leisure_info
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_goodbye
+
+# STORY LINE FOR LEWISHAM LOCAL Services info 
+# this story line provides links to the user for the current services offered by the Lewisham Council
+
+- story: Services info
+  steps:
+  - intent: Services
+  - action: utter_services_info
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_goodbye
+
+
+- story: Community info
+  steps:
+  - intent: Community
+  - action: utter_community_info
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_goodbye
+
+- story: Professional info
+  steps:
+  - intent: Professional
+  - action: utter_professional_info
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_goodbye
+
+- story: Online&Others info
+  steps:
+  - intent: Online&Others
+  - action: utter_online&others_info
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_goodbye
